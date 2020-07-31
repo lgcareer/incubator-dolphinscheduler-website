@@ -71,7 +71,7 @@ chmod 600 ~/.ssh/authorized_keys
 <ul>
 <li>进入数据库，默认数据库是PostgreSQL，如选择MySQL的话，后续需要添加mysql-connector-java驱动包到DolphinScheduler的lib目录下</li>
 </ul>
-<pre><code>mysql -h192.168.xx.xx -P3306 -uroot -p
+<pre><code>mysql -uroot -p
 </code></pre>
 <ul>
 <li>
@@ -151,8 +151,8 @@ dbname="dolphinscheduler"
 #</span><span class="bash"> 数据库用户名，此处需要修改为上面设置的{user}具体值</span>
 username="xxx"    
 <span class="hljs-meta">
-#</span><span class="bash"> 数据库密码, 如果有特殊字符，请使用\转义，需要修改为上面设置的{passowrd}具体值</span>
-passowrd="xxx"
+#</span><span class="bash"> 数据库密码, 如果有特殊字符，请使用\转义，需要修改为上面设置的{password}具体值</span>
+password="xxx"
 <span class="hljs-meta">
 #</span><span class="bash">Zookeeper地址，单机本机是localhost:2181，记得把2181端口带上</span>
 zkQuorum="localhost:2181"
